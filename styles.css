@@ -481,19 +481,129 @@ footer:hover p {
 }
 
 @media (max-width: 768px) {
+    nav {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        padding: 4rem 1rem;
+    }
+
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        line-height: 1.2;
     }
 
     .hero p {
         font-size: 1rem;
     }
 
-    nav ul {
-        gap: 1rem;
+    .cta-button {
+        padding: 0.9rem 2rem;
+        font-size: 0.95rem;
+    }
+
+    section {
+        padding: 3rem 1rem;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-title::after {
+        width: 60px;
+        height: 3px;
+    }
+
+    .services {
+        padding-bottom: 0.5rem;
+    }
+
+    .service-card {
+        flex: 0 0 260px;
+        min-width: 260px;
+        padding: 1.5rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .icon {
+        font-size: 2.5rem;
+    }
+
+    .portfolio {
+        padding: 3rem 1rem;
+    }
+
+    .portfolio-wrapper {
+        max-width: 100%;
+    }
+
+    .portfolio-grid {
+        padding: 0;
+    }
+
+    .portfolio-item {
+        border-radius: 15px;
+    }
+
+    .portfolio-img {
+        height: 180px;
+        font-size: 1rem;
+    }
+
+    .portfolio-content {
+        padding: 1.2rem;
+    }
+
+    .portfolio-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .portfolio-content p {
+        font-size: 0.85rem;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .cta-section {
+        padding: 3rem 1.5rem;
+        width: 100vw;
+        margin: 0 calc(-50vw + 50%);
+    }
+
+    .cta-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-section p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-button-white {
+        padding: 0.9rem 2rem;
+        font-size: 0.95rem;
+    }
+
+    footer {
+        padding: 2rem 1rem;
+        font-size: 0.85rem;
     }
 }
