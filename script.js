@@ -9,8 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const autoplayDelay = 4000; // 4 seconds
     
     function updateSlidePosition() {
-        const offset = -currentSlide * 100;
-        portfolioGrid.style.transform = `translateX(${offset}%)`;
+        const slideWidth = slides[0].offsetWidth;
+        const gap = 32; // 2rem gap
+        const offset = -currentSlide * (slideWidth + gap);
+        portfolioGrid.style.transform = `translateX(${offset}px)`;
         
         // Update dots
         dots.forEach((dot, index) => {
