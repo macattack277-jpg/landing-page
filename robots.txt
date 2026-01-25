@@ -1,0 +1,9 @@
+# robots.txt for Mac Sites
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.macsites.com.au/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
