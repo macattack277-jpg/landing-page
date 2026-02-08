@@ -68,12 +68,14 @@ nav a::after {
     transition: width 0.3s ease;
 }
 
-nav a:hover::after {
-    width: 100%;
-}
+@media (hover: hover) and (pointer: fine) {
+    nav a:hover::after {
+        width: 100%;
+    }
 
-nav a:hover {
-    opacity: 1;
+    nav a:hover {
+        opacity: 1;
+    }
 }
 
 .hero {
@@ -168,13 +170,15 @@ nav a:hover {
     transition: left 0.3s ease;
 }
 
-.cta-button:hover::before {
-    left: 100%;
-}
+@media (hover: hover) and (pointer: fine) {
+    .cta-button:hover::before {
+        left: 100%;
+    }
 
-.cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
 }
 
 section {
@@ -233,8 +237,10 @@ section {
     border-radius: 10px;
 }
 
-.services::-webkit-scrollbar-thumb:hover {
-    background: #222;
+@media (hover: hover) and (pointer: fine) {
+    .services::-webkit-scrollbar-thumb:hover {
+        background: #222;
+    }
 }
 
 .service-card {
@@ -262,13 +268,15 @@ section {
     transition: opacity 0.3s ease;
 }
 
-.service-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-}
+@media (hover: hover) and (pointer: fine) {
+    .service-card:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    }
 
-.service-card:hover::before {
-    opacity: 1;
+    .service-card:hover::before {
+        opacity: 1;
+    }
 }
 
 .service-card h3 {
@@ -289,8 +297,10 @@ section {
     transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.service-card:hover .icon {
-    transform: scale(1.1) rotate(5deg);
+@media (hover: hover) and (pointer: fine) {
+    .service-card:hover .icon {
+        transform: scale(1.1) rotate(5deg);
+    }
 }
 
 /* Individual Service Card Colors */
@@ -397,9 +407,11 @@ section {
     border: 2px solid transparent;
 }
 
-.dot:hover {
-    background: #999;
-    transform: scale(1.2);
+@media (hover: hover) and (pointer: fine) {
+    .dot:hover {
+        background: #999;
+        transform: scale(1.2);
+    }
 }
 
 .dot.active {
@@ -509,13 +521,15 @@ section {
     transition: left 0.3s ease;
 }
 
-.cta-button-white:hover::before {
-    left: 100%;
-}
+@media (hover: hover) and (pointer: fine) {
+    .cta-button-white:hover::before {
+        left: 100%;
+    }
 
-.cta-button-white:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 20px 40px rgba(255,255,255,0.2);
+    .cta-button-white:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 20px 40px rgba(255,255,255,0.2);
+    }
 }
 
 /* FAQ Section */
@@ -540,8 +554,10 @@ section {
     border: 1px solid #e5e5e5;
 }
 
-.faq-item:hover {
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+@media (hover: hover) and (pointer: fine) {
+    .faq-item:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
 }
 
 .faq-question {
@@ -554,8 +570,10 @@ section {
     transition: background 0.3s ease;
 }
 
-.faq-question:hover {
-    background: #f0f0f0;
+@media (hover: hover) and (pointer: fine) {
+    .faq-question:hover {
+        background: #f0f0f0;
+    }
 }
 
 .faq-question h3 {
@@ -632,9 +650,11 @@ section {
     border: 1px solid #e5e5e5;
 }
 
-.contact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+@media (hover: hover) and (pointer: fine) {
+    .contact-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
 }
 
 .contact-icon {
@@ -659,9 +679,11 @@ section {
     border-radius: 8px;
 }
 
-.contact-link:hover {
-    background: #e5e5e5;
-    transform: scale(1.05);
+@media (hover: hover) and (pointer: fine) {
+    .contact-link:hover {
+        background: #e5e5e5;
+        transform: scale(1.05);
+    }
 }
 
 .contact-cta {
@@ -711,8 +733,10 @@ footer p {
     transition: opacity 0.3s ease;
 }
 
-footer:hover p {
-    opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+    footer:hover p {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 768px) {
@@ -721,7 +745,7 @@ footer:hover p {
     }
 
     .logo {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     nav ul {
@@ -731,6 +755,7 @@ footer:hover p {
 
     .hero {
         padding: 4rem 1rem;
+        background-attachment: scroll;
     }
 
     .hero h1 {
@@ -821,6 +846,7 @@ footer:hover p {
         padding: 3rem 1.5rem;
         width: 100vw;
         margin: 0 calc(-50vw + 50%);
+        background-attachment: scroll;
     }
 
     .cta-section h2 {
